@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+    list-style: none; 
+    box-sizing: border-box;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat-Bold";
+}
+:root{
+    ---main-color: #A4BC92;
+    ---second-color: #B3C99C;
+    ---text-color: #C7E9B0;
+}
+
+/************ NAVBAR *************/
+.container-fluid{
+    background-color: var(---main-color);
+    color: #fff;
+    padding: 1% 20% 1% 20%;
+}
+
+/************ TITLE **************/
+#title{
+    color: var(---main-color);
+    height: 700px;
+    padding: 5% 20% 5% 20%;
+    background: #ffffff url("images/dog.png") no-repeat right;
+}
+.big-heading {
+    font-family: "Montserrat-Black";
+    font-size: 6rem;
+    line-height: 1.5;
+}
+@media (max-width: 2558px){
+    #title {
+        top: 100px;
+        background: #ffffff url("images/dog.png") no-repeat bottom right;
+        background-size: 1000px;
+    }
+
+}
+@media (max-width: 1200px){
+    #title {
+        padding: 6% 5% 1% 5%; 
+        background: #ffffff url("images/dog.png") no-repeat bottom right;
+        background-size: 500px;
+    }
+    .big-heading {
+        font-family: "Montserrat-Black";
+        font-size: 4rem;
+        line-height: 1.5;
+    }
+}
+
+
+/************ CAROUSEL ***********/
+
+.carousel-inner p {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #C7E9B0;
+    color: black;
+}
+/* .carousel-inner img {
+    height: 1000px;
+} */
+/* @media(min-width: 924px) {
+    .carousel-inner img {
+        height: 200px;
+    }
+} */
+   /* .div-img-carousel, .item.active {
+        overflow: hidden;
+        width: 700px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .carousel-inner {
+        width: 40%;
+    }
+
+    .carousel-container {
+        width: 700px;
+        height: 400px;
+    }
+} */
+
+
+/************ PRICING ************/
+#pricing {
+    background-color: var(---main-color);
+    height: 700px;
+    padding: 5% 20% 5% 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cards {
+    margin: 0 50px 0 50px;
+    
+}
+
+@media (max-width: 967px){
+    #pricing {
+        display: flex;
+        flex-direction: column;
+        height: 1100px;
+    }
+}
+
+/************ CTA ****************/
+#cta {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cta-text{
+    padding-bottom: 50px;
+
+}
+i{
+    padding-right: 10px;
+}
+@media (max-width: 967px){
+    #cta{
+        margin-left: 100px;
+        margin-block-end: 100px;
+        text-align: center;
+    }
+}
+/************ FOOTER *************/ 
+#footer{
+    background-color: var(---main-color);
+    color: var(--main-color);
+    font-weight: bold;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer p{
+    margin: 0;
+}
